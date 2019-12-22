@@ -5,17 +5,17 @@ import MemberCard from '../../components/MemberCard/MemberCard'
 import './Home.css'
 
 function Home() {
-    const users = useContext(TeamMemberContext)
+    const members = useContext(TeamMemberContext)
     
     return (
-        users.length === 0 ? null : (
+        members.length === 0 ? null : (
             <div className='home-container'>
                 <div className='our-team'>
                     <h1>Our Team</h1>
                     <div className='members-container'>
-                        {users.map((user) => {
+                        {members.map((member) => {
                             return (
-                                <MemberCard img={user.photo} name={user.name} />
+                                <MemberCard img={member.photo} name={member.name} />
                             )
                         })}
                     </div>
