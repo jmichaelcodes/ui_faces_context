@@ -1,0 +1,50 @@
+h1 {
+    margin-bottom: 50px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 50px 30px;
+    text-align: center;
+}
+
+.members-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-story-desktop-header {
+    display: none;
+}
+
+.our-story > p {
+    text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+    .home-container {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 50px 100px 50px 100px;
+      text-align: left;
+    }
+    
+    .our-story {
+      width: 25%;
+    }
+
+    .our-story-desktop-header {
+        display: block !important;
+    }
+
+    .our-story-mobile-header {
+        display: none;
+    }
+
+    .our-team {
+      width: 60%;
+    }
+}

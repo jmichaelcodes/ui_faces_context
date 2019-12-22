@@ -1,0 +1,14 @@
+.card-container {
+    width: 45%;
+    text-align: center;
+}
+
+.card-container > img {
+    width: 100%
+}
+
+@media only screen and (min-width: 600px) {
+    .card-container {
+      width: 26%;
+    }
+}
